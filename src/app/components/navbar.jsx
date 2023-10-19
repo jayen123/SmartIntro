@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-
+import ToggleMenu from "./toggleMenu"
 export default function Navbar() {
   return (
     <section className="bg-lblack">
@@ -25,17 +25,7 @@ export default function Navbar() {
                     <a className="btn-primary" href="/src/pages/login.html">Login</a>
                 </div>      
                 <div className="md:hidden">
-                    <button className="text-white text-2xl" id="phone_menu_btn">
-                        <span className="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>
-                    </button>
-                    <ul className="w-full p-5 absolute top-full right-full bg-dblack z-10 transition-all duration-500 ease-in-out" id="toggle_menu">
-                        <li><a className="link" href="/src/pages/index.html">Home</a></li>
-                        <li><a className="link" href="/src/pages/products.html">Cards</a></li>
-                        <li><a className="link" href="#">Features</a></li>
-                        <li><a className="link" href="#">FAQs</a></li>
-                        <li><a className="link" href="/src/pages/contact.html">Contact Us</a></li>
-                        <li><a className="btn-primary block text-center" href="/src/pages/login.html">Login</a></li>
-                    </ul>
+                    <ToggleMenu />
                 </div>
             </div>
         </nav>
