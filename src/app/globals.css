@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components{
+    /* nav Link */
+    .link {
+        @apply  uppercase text-white text-lg font-medium relative  after:content-[''] after:absolute after:w-full after:h-[2px] after:origin-[right_top] after:transition-transform after:duration-[0.4s] after:ease-[cubic-bezier(0.74,0.72,0.27,0.24)] after:scale-x-0 after:scale-y-100 after:left-0 after:top-full after:bg-lred  hover:after:origin-[left_top] hover:after:scale-100
+    }
+    /* Primary Button */
+    .btn-primary {
+        @apply cursor-pointer inline-block bg-gradient-to-b from-lred bg-lpink py-[10px] px-4 text-[10px] text-white font-bold uppercase rounded-[5px] duration-1000 sm:text-[14px] sm:py-3 sm:px-5 md:py-3 md:px-6 md:text-lg
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .btn-primary:hover {
+        @apply bg-gradient-to-b from-lpink bg-lred
+    }
+    /* Secondary Button */
+    .secondary-btn {
+        @apply block bg-white font-bold text-[14px] text-dblack py-3 px-4 rounded-md cursor-pointer
+    }
 }
