@@ -11,7 +11,7 @@ export default function Navbar() {
                     <Image src="/next.svg" height={100} width={100} alt="logo" />
                 </Link>
             </div>
-            <div className="flex items-center gap-20">
+            <div className="flex items-center gap-10 lg:gap-20">
                 <div>
                     <ul className="hidden md:flex gap-5">
                         <li><a className="link group" href="/src/pages/index.html">Home</a></li>

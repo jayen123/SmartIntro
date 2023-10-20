@@ -5,10 +5,10 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <>
-        <section className="bg-lblack px-[10px] md:px-0 py-[50px]">
+        <section className="bg-lblack px-5 lg:px-0 py-[50px]">
         <div className="container">
             <div className="row">
-                <div className="grid lg:grid-cols-4 gap-5">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                     <div className="flex flex-col gap-5">
                         <div>
                             <Link href="/">

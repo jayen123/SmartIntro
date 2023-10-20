@@ -5,7 +5,7 @@
 @layer components{
     /* nav Link */
     .link {
-        @apply  uppercase text-white text-lg font-medium relative  after:content-[''] after:absolute after:w-full after:h-[2px] after:origin-[right_top] after:transition-transform after:duration-[0.4s] after:ease-[cubic-bezier(0.74,0.72,0.27,0.24)] after:scale-x-0 after:scale-y-100 after:left-0 after:top-full after:bg-lred  hover:after:origin-[left_top] hover:after:scale-100
+        @apply  uppercase text-white md:text-base font-medium relative  after:content-[''] after:absolute after:w-full after:h-[2px] after:origin-[right_top] after:transition-transform after:duration-[0.4s] after:ease-[cubic-bezier(0.74,0.72,0.27,0.24)] after:scale-x-0 after:scale-y-100 after:left-0 after:top-full after:bg-lred  hover:after:origin-[left_top] hover:after:scale-100 lg:text-lg
     }
     /* Primary Button */
     .btn-primary {
@@ -24,7 +24,7 @@
     }
     /* Footer SEction */
     .footer-link {
-        @apply inline-flex items-center gap-2 text-white text-sm font-medium uppercase transition-all duration-300 hover:text-lred md:text-lg
+        @apply inline-flex items-center gap-2 text-white text-sm font-medium uppercase transition-all duration-300 hover:text-lred md:text-base lg:text-lg
     }
     .footer-input {
         @apply text-white border-b border-white outline-none bg-transparent pb-2
