@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
-import ToggleMenu from "./toggleMenu"
+import ToggleBar from "./toggleMenu"
 
 export default function Navbar() {
     const router = useRouter();
@@ -29,7 +29,7 @@ export default function Navbar() {
                     <button onClick={()=>router.push("/login")} className="btn-primary">Login</button>
                 </div>      
                 <div className="md:hidden">
-                    <ToggleMenu />
+                    <ToggleBar />
                 </div>
             </div>
         </nav>
@@ -37,3 +37,7 @@ export default function Navbar() {
 </section>
   )
 }
+
+
+
+
