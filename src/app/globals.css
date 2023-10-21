@@ -27,7 +27,7 @@
         @apply inline-flex items-center gap-2 text-white text-sm font-medium uppercase transition-all duration-300 hover:text-lred md:text-base lg:text-lg
     }
     .footer-input {
-        @apply text-white border-b border-white outline-none bg-transparent pb-2
+        @apply appearance-none text-white border-b border-white outline-none bg-transparent pb-2
     }
 
     .footer-input::placeholder {
@@ -38,5 +38,13 @@
     }
     .footer-arrow {
         @apply group-hover:rotate-90
+    }
+     /* contact page input */
+     .contact-label {
+        @apply text-sm text-dgray md:text-xl
+    }
+
+    .contact-input {
+        @apply w-full border py-2 px-2 text-lgray border-lgray outline-none bg-transparent rounded focus:ring-2 focus:ring-dgray
     }
 }
