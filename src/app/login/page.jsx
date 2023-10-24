@@ -26,8 +26,8 @@ export default function Login() {
                                     <input className="contact-input" type="email" name="email" id="email" />
                                 </div>
                                 <div id="pass" className="flex flex-col gap-1 relative">
-                                    <label className="contact-label" for="password">Password</label>
-                                    <input className="contact-input" type="password" name="password" id="password" />
+                                    <label className="contact-label" for={"password"}>Password</label>
+                                    <input className="contact-input" type={icon ? "text" : "password"} name="password" id="password" />
                                     <div onClick={toggleEye} className="absolute right-2 top-[50%]  text-lgray text-2xl cursor-pointer md:top-[55%]">
                                         {icon ? <ImEye /> : <ImEyeBlocked />} 
                                     </div>

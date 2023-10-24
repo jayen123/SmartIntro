@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import ProductCard from "../components/card"
 export default function Card() {
   return (
