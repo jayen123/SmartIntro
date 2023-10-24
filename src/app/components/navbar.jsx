@@ -19,7 +19,7 @@ export default function Navbar() {
                 <div>
                     <ul className="hidden md:flex gap-5">
                         <li><Link className="link group" href="/">Home</Link></li>
-                        <li><Link className="link group" href="/src/pages/products.html">Cards</Link></li>
+                        <li><Link className="link group" href="/card">Cards</Link></li>
                         <li><Link className="link group" href="#">Features</Link></li>
                         <li><Link className="link group" href="#">FAQs</Link></li>
                         <li><Link className="link group" href="/contact">Contact Us</Link></li>

@@ -18,9 +18,8 @@ const ToggleMenu = () => {
         {isOpen ? <RiCloseFill /> : <RiMenu4Fill />} 
       </button>
 
-      {isOpen && (
         <div className="menu">
-            <ul className="w-full p-5 absolute top-full right-0 bg-dblack z-10 transition-all duration-500 ease-in-out" id="toggle_menu">
+            <ul className={isOpen ? "w-full p-5 absolute top-full right-0 bg-dblack z-10 transition-all duration-500 ease-in-out" : "w-full p-5 absolute top-full right-full bg-dblack z-10 transition-all duration-500 ease-in-out"} id="toggle_menu">
                 <li><Link className="link" href="/">Home</Link></li>
                 <li><Link className="link" href="#">Cards</Link></li>
                 <li><Link className="link" href="#">Features</Link></li>
@@ -29,7 +28,6 @@ const ToggleMenu = () => {
                 <li><button onClick={()=>router.push("/login")} className="btn-primary text-center w-full" href="/login">Login</button></li>
             </ul>
         </div>
-      )}
     </div>
   );
 };
