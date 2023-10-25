@@ -5,6 +5,14 @@ import Image from "next/image"
 import ToggleBar from "./toggleMenu"
 
 export default function Navbar() {
+    const menuItems = [
+        { id: 1, text: 'Home', path: '/' },
+        { id: 2, text: 'Cards', path: '/card' },
+        { id: 4, text: 'Features', path: '/features' },
+        { id: 3, text: 'Faqs', path: '/faqs' },
+        { id: 5, text: 'Contact', path: '/contact' }
+        // Add more menu items as needed
+      ];
     const router = useRouter();
   return (
     <section className="bg-lblack">
@@ -18,11 +26,11 @@ export default function Navbar() {
             <div className="flex items-center gap-10 lg:gap-20">
                 <div>
                     <ul className="hidden md:flex gap-5">
-                        <li><Link className="link group" href="/">Home</Link></li>
-                        <li><Link className="link group" href="/card">Cards</Link></li>
-                        <li><Link className="link group" href="#">Features</Link></li>
-                        <li><Link className="link group" href="#">FAQs</Link></li>
-                        <li><Link className="link group" href="/contact">Contact Us</Link></li>
+                        {menuItems.map((item) => (
+                            <li key={item.id}>
+                                <Link className="link group" href={item.path}>{item.text}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="hidden md:flex">

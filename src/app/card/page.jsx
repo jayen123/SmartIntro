@@ -1,5 +1,4 @@
 "use client"
-import { useEffect } from "react"
 import ProductCard from "../components/card"
 export default function Card() {
   return (
