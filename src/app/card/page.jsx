@@ -1,4 +1,5 @@
 "use client"
+import {motion} from "framer-motion"
 import ProductCard from "../components/card"
 export default function Card() {
   return (
@@ -9,6 +10,25 @@ export default function Card() {
               <ProductCard bg="bg-[url('/images/white-card.png')]" quality="Premium" />
                 <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
                 <ProductCard bg="bg-[url('/images/gradient-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
+                <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
                 <ProductCard bg="bg-[url('/images/red-card.png')]" quality="Premium" />
             </div>
         </div>

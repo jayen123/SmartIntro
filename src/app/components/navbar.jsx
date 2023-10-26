@@ -20,7 +20,7 @@ export default function Navbar() {
         <nav className="flex justify-between items-center px-[10px] py-5 lg:px-0">
             <div>
                 <Link href="/">
-                    <Image src="/next.svg" height={100} width={100} alt="logo" />
+                    <Image src="/images/logo.svg" height={150} width={150} alt="logo" />
                 </Link>
             </div>
             <div className="flex items-center gap-10 lg:gap-20">

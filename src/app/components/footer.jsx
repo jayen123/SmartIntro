@@ -12,7 +12,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-5">
                             <div>
                                 <Link href="/">
-                                    <Image src="/next.svg" height={100} width={100} alt="footer-logo" />
+                                    <Image src="/images/logo.svg" height={150} width={150} alt="footer-logo" />
                                 </Link>
                             </div>
                             <div>
