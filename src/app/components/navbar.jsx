@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
+import Logo from "../../../public/next.svg"
 import ToggleBar from "./toggleMenu"
 
 export default function Navbar() {
@@ -20,7 +21,7 @@ export default function Navbar() {
         <nav className="flex justify-between items-center px-[10px] py-5 lg:px-0">
             <div>
                 <Link href="/">
-                    <Image src="/images/logo.svg" height={150} width={150} alt="logo" />
+                    <Image src={Logo} width={150} alt="logo" />
                 </Link>
             </div>
             <div className="flex items-center gap-10 lg:gap-20">
