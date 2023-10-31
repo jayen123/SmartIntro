@@ -2,6 +2,7 @@ import { SlSocialFacebook,SlSocialTwitter,SlSocialLinkedin,SlSocialInstagram } f
 import { TiArrowRightThick } from 'react-icons/ti'
 import Link from 'next/link'
 import Image from 'next/image'
+import Logo from "../../../public/next.svg"
 export default function Footer() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-5">
                             <div>
                                 <Link href="/">
-                                    <Image src="/next.svg" height={150} width={150} alt="footer-logo" />
+                                    <Image src={Logo} width={150} alt="footer-logo" />
                                 </Link>
                             </div>
                             <div>
