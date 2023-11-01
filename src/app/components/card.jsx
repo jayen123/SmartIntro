@@ -4,16 +4,14 @@ import {motion} from "framer-motion"
 export default function ProductCard(props) {
   const cardVarients = {
     hidden : {
-      y: 50,
       scale: 0,
       opacity: .3
     },
     visible : {
-      y: 0,
       scale: 1,
       opacity: 1,
       transition :{
-        duration: 1,
+        duration: 1
       }
     }
   }

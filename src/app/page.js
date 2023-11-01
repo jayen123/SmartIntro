@@ -1,4 +1,11 @@
 "use client"
+import HowWorkImage from "./components/howWorkImage"
+import HowWork from "./components/howwork"
+import {SlWallet,SlCheck} from "react-icons/sl"
+import {ImQrcode} from "react-icons/im"
+import {RxUpdate} from "react-icons/rx"
+import {MdOutlineVerifiedUser,MdOutlinePhoneAndroid} from "react-icons/md"
+import HeroFeature from "./components/heroFeature"
 import {motion} from "framer-motion"
 import Link from "next/link"
 
@@ -73,7 +80,49 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </section>
+        </section>
+        {/* Features Section */}
+        <section className="bg-dblack py-[50px]">
+        <div className="container">
+            <div className="row flex flex-col gap-[50px]">
+                <div className="font-mont font-bold text-center uppercase">
+                    <p className="text-sm text-lred md:text-base">Features</p>
+                    <h2 className="text-base md:text-3xl text-white">Make Your First Impression Special</h2>
+                </div>
+                <div className="grid gap-5 px-[10px] sm:grid-cols-2 lg:grid-cols-3">
+                    <HeroFeature heading="CONTACTLESS" icon={<SlWallet />} text="Smart Intro Card can be easily exchanged and accessed through a simple tap of an NFC enabled device."/>
+                    <HeroFeature heading="CONVENIENT" icon={<SlCheck />} text="Information is stored digitally and a Smart Intro card can be used for around 0.1 million times. So no need to carry or store multiple visiting/ business cards."/>
+                    <HeroFeature heading="QR CODES" icon={<ImQrcode />} text="Open camera or QR code reader to scan the QR code to share the Smart Intro Profile if anyone's device don't support NFC."/>
+                    <HeroFeature heading="UPDATABLE" icon={<RxUpdate />} text="You can update the information of your Smart Intro card anytime you want."/>
+                    <HeroFeature heading="SECURE" icon={<MdOutlineVerifiedUser />} text="The information on your Smart Intro Card is stored securely and is only accessible by authorized devices."/>
+                    <HeroFeature heading="NO APPS NEEDED" icon={<MdOutlinePhoneAndroid />} text="You or the receiver doesn't need any apps to share or receive your Smart Intro profile."/>
+                </div>
+            </div>
+        </div>
+        </section>
+        {/* How It Work Section  */}
+        <section className="bg-lgray py-[50px]">
+        <div className="container">
+            <div className="row flex flex-col gap-[50px]">
+                <div className="font-mont font-bold text-center uppercase">
+                    <p className="text-sm text-lred md:text-base">SUBSCRIPTION</p>
+                    <h2 className="text-base md:text-3xl text-dblack">Get Started In Just Few Steps</h2>
+                </div>
+                <div className="flex justify-center px-[10px]"> 
+                    <div className="grid md:grid-cols-2 items-center gap-5 max-w-3xl">
+                        <HowWorkImage bg="bg-[url('/images/white-card.png')]"/>
+                        <HowWork number="01" title="SELECT YOUR CARD AND SUBSCRIPTION PLAN" text="Select Your Smart Card, Add To Contact form & Complete Checkout Process." />
+                        <HowWork number="02" title="MAKE PAYMENT" text="Design Process Starts After Order. Design Team Will Contact For Custom Design" />
+                        <HowWorkImage bg="bg-[url('/images/gradient-card.png')]"/>
+                        <HowWorkImage bg="bg-[url('/images/red-card.png')]"/>
+                        <HowWork number="03" title="GET YOUR CARD" text="Design Process Starts After Order. Design Team Will Contact For Custom Design" />
+                        <HowWork number="04" title="CREATE PROFILE AND START SHARING" text="After Receiving Your INTRO Product, Tap Or Scan To Create INTRO Profile." />
+                        <HowWorkImage bg="bg-[url('/images/gradient-card.png')]"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
     </>
   )
 }

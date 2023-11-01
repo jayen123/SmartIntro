@@ -1,4 +1,6 @@
 import CommonHero from "../components/commonpage"
+import Input from "../components/input"
+import Label from "../components/inputlabel"
 
 export default function ContactUs() {
   return (
@@ -16,27 +18,27 @@ export default function ContactUs() {
                         <form action="#" class="px-[10px] md:px-0">
                             <div class="grid grid-cols-2 gap-5">
                                 <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
-                                    <label class="contact-label" for="name">Name</label>
-                                    <input class="contact-input" type="text" name="name" id="name" />
+                                    <Label target="name" label="Name"/>
+                                    <Input class="contact-input" type="text" id="name"/>
                                 </div>
                                 <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
-                                    <label class="contact-label" for="email">Email Address</label>
-                                    <input class="contact-input" type="email" name="email" id="email" />
+                                    <Label target="email" label="Email Address"/>
+                                    <Input class="contact-input" type="email" name="email"/>
                                 </div>
                                 <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
-                                    <label class="contact-label" for="subject">Subject</label>
-                                    <input class="contact-input" type="text" name="subject" id="subject" />
+                                    <Label target="subject" label="Subject"/>
+                                    <Input class="contact-input" type="text" name="subject"/>
                                 </div>
                                 <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
-                                    <label class="contact-label" for="Phone">Phone</label>
-                                    <input class="contact-input" type="text" name="Phone" id="Phone" />
+                                    <Label target="phone" label="Phone"/>
+                                    <Input class="contact-input" type="text" name="Phone"/>
                                 </div>
                                 <div class="flex flex-col gap-1 col-span-2">
-                                    <label class="contact-label" for="messege">Message</label>
+                                    <Label target="messege" label="Message"/>
                                     <textarea class="contact-input resize-none" name="messege" id="messege" cols="30" rows="10"></textarea>
                                 </div>
                                 <div class="flex flex-col col-span-2">
-                                    <input class="btn-primary" type="submit" value="SEND MESSAGE" />
+                                    <Input class="btn-primary" type="submit" value="SEND MESSAGE"/>
                                 </div>
                             </div>
                             </form>
