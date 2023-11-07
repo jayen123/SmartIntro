@@ -1,5 +1,6 @@
+"use client"
 import {motion} from "framer-motion"
-export default function HowWork (props) {
+export default function HowWorkTitle ({number,title,text}) {
   const varients = {
     hidden:{
       y : 150,
@@ -22,11 +23,11 @@ export default function HowWork (props) {
         viewport={{once:true}}
          className="flex flex-col gap-[10px] font-mont">
             <div>
-                <span className="text-lg text-lred font-semibold tracking-wider">{props.number}</span>
-                <h5 className="text-lg md:text-2xl text-dblack font-semibold tracking-widest uppercase">{props.title}</h5>
+                <span className="text-lg text-lred font-semibold tracking-wider">{number}</span>
+                <h5 className="text-lg md:text-2xl text-dblack font-semibold tracking-widest uppercase">{title}</h5>
             </div>
             <div>
-                <p className="text-base md:text-lg">{props.text}</p>
+                <p className="text-base md:text-lg">{text}</p>
             </div>
         </motion.div>
     </>

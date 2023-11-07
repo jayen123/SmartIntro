@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default function ProductCard({bg,quality,name,currentPrice,allTimePrice}) {
+export default function SingleCard({bg,quality,name,currentPrice,allTimePrice}) {
 
   return (
     <>

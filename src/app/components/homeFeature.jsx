@@ -1,4 +1,4 @@
-export default function HeroFeature({icon,heading,text}) {
+export default function HomeFeatureCard({icon,heading,text}) {
   return (
     <>
         <div className="flex items-center bg-lblack rounded-md aspect-square hover:bg-gradient-to-r from-lred hover:bg-lpink duration-1000">
