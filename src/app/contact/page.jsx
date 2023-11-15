@@ -41,7 +41,7 @@ export default function ContactUs() {
                                     <Input class="btn-primary" type="submit" value="SEND MESSAGE"/>
                                 </div>
                             </div>
-                            </form>
+                        </form>
                     </div>
                 </div>
             </div>

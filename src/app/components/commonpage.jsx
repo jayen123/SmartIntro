@@ -1,7 +1,6 @@
 "use client"
-import { useEffect } from "react"
 import {motion} from "framer-motion"
-const CommonHero = (props) => {
+const CommonHero = ({heading}) => {
     const h1Varients = {
         hidden : {
             y: 20,
@@ -27,7 +26,7 @@ const CommonHero = (props) => {
                         initial="hidden"
                         animate="visible"
                         
-                         className="bg-gradient-to-b from-lred bg-lpink bg-clip-text text-transparent text-2xl font-bold text-center uppercase md:text-[40px]">{props.heading}</motion.h1>
+                         className="bg-gradient-to-b from-lred bg-lpink bg-clip-text text-transparent text-2xl font-bold text-center uppercase md:text-[40px]">{heading}</motion.h1>
                     </div>
                 </div>
             </section>

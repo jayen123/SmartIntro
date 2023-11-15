@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Label(props) {
+export default function Label({target,label}) {
   return (
     <>
-        <label className="contact-label" for={props.target}>{props.label}</label>
+        <label className="contact-label" for={target}>{label}</label>
     </>
   )
 }
