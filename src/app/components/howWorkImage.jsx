@@ -1,6 +1,6 @@
 "use client"
 import {motion} from "framer-motion"
-export default function HowWorkImage(props) {
+export default function HowWorkImage({bg}) {
   const Image = {
     hidden:{
       scale : .2,
@@ -21,7 +21,7 @@ export default function HowWorkImage(props) {
         initial="hidden"
         whileInView="visible"
         viewport={{once: true}}
-        className={props.bg + ' bg-no-repeat  bg-cover bg-center aspect-square'}></motion.div> 
+        className={bg + ' bg-no-repeat  bg-cover bg-center aspect-square'}></motion.div> 
     </>
   )
 }
