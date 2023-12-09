@@ -11,9 +11,9 @@ export default async function Users() {
     <>
     <h1>Users</h1>
             {
-                users.map(({name})=>(
+                users.map(({name,id})=>(
                     <div>
-                        <Link className="text-teal-500 text-xl font-bold" href={`users/${name}`}>{name}</Link>
+                        <Link className="text-teal-500 text-xl font-bold" href={`users/${id}`}>{name}</Link>
                     </div>
                 ))
             }

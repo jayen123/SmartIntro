@@ -3,5 +3,5 @@ import { NextResponse } from "next/server";
 
 export function GET (request,content) {
     const data = users.filter((item)=>item.id == content.params.id);
-    return NextResponse.json(data.length == 0 ? {result: "No Data Found",success: false} : {result: data,success: true},{status: 200})
+    return NextResponse.json(data.length == 0 ? {result: "No Data Found",success: false} : {result: data[0],success: true},{status: 200})
 }
