@@ -1,10 +1,10 @@
 import CommonHero from "../components/commonpage"
-import Productcard from "../components/ProductCard"
+import Cards from "../components/ProductCard"
 export default function Card() {
   return (
     <>
         <CommonHero heading="Products" />
-        <Productcard/>
+        <Cards/>
     </>
   )
 }

@@ -38,7 +38,7 @@ export default function Footer() {
                         </div>
                         <div className="flex items-center">
                             <ul className="flex flex-col gap-[10px]">
-                                <li><Link className="footer-link group" href="/src/pages/products.html"> <TiArrowRightThick className='footer-arrow'/> Products</Link></li>
+                                <li><Link className="footer-link group" href="/card"> <TiArrowRightThick className='footer-arrow'/> Products</Link></li>
                                 <li><Link className="footer-link group" href="#"> <TiArrowRightThick className='footer-arrow'/> Features</Link></li>
                                 <li><Link className="footer-link group" href="/contact"> <TiArrowRightThick className='footer-arrow'/> Contact Us</Link></li>
                             </ul>

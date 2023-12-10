@@ -10,7 +10,7 @@ export default function SingleProductDetails({bg,category,title,discount,daily})
                     <IoMdArrowDropdown className='text-lg'/>
                 </div>
                 <div className="grid items-center gap-5 px-[10px] md:px-0 md:grid-cols-2">
-                    <div className={ bg + " bg-no-repeat aspect-square"}></div>
+                    <div className={'bg-[url(\''+ bg +'\')] bg-no-repeat bg-cover bg-center aspect-square'}></div>
                     <div className="flex flex-col gap-10">
                         <div className=" text-dblack">
                             <h5 className="text-xs font-bold tracking-widest">CATEGORY: <span className="text-lred">{category}</span></h5>
@@ -33,7 +33,7 @@ export default function SingleProductDetails({bg,category,title,discount,daily})
                             </div>
                         </div>
                         <div className="grid gap-4">
-                            <div className="">
+                            <div className="flex items-center gap-1">
                                 <span className="text-dblack font-bold md:text-[30px]">{discount}</span>
                                 <span className="text-lred font-light line-through md:text-lg">{daily}</span>
                             </div>

@@ -6,7 +6,6 @@ export const getUser = async (id) => {
 
 export default async function UserDetail({params}) {
   const user = await getUser(params.userid);
-  console.log(user)
   return (
     <>
         <h1>User Detail</h1>

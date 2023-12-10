@@ -1,12 +1,13 @@
 import Link from 'next/link'
-export default function SingleCard({bg,quality,name,currentPrice,allTimePrice}) {
+
+export default function SingleCard({bg,url,quality,name,currentPrice,allTimePrice}) {
 
   return (
     <>
       <div class="group flex flex-col gap-3">
           <div className={'bg-[url(\''+ bg +'\')] bg-no-repeat bg-cover bg-center aspect-square'}>
               <div class="flex justify-center items-center p-1 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 w-full h-full bg-lblack/30 transition-all duration-300 ease-in-out">
-                  <Link class="btn-primary" href="/card">VIEW</Link>
+                  <Link class="btn-primary" href={url}>VIEW</Link>
               </div>
           </div>
           <div class="flex flex-col items-center text-white">
