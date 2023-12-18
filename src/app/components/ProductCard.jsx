@@ -14,16 +14,12 @@ export default async function Cards() {
             <div className="container">
                 <div className="grid grid-cols-1 gap-x-5 gap-y-10 px-[10px] md:px-0 md:grid-cols-3 lg:grid-cols-4">
                     {
-                      cards.map(({id,image,quality,name,currentPrice,allTimePrice}) => (
+                      cards.map(({id,image}) => (
                         <div>
                             <SingleCard 
                             key={id}
                             url={`card/${id}`}
                             bg={image}
-                            quality={quality}
-                            name={name}
-                            currentPrice={currentPrice}
-                            allTimePrice={allTimePrice}
                             />
                         </div>
                       ))
