@@ -9,7 +9,7 @@ import {MdOutlineVerifiedUser,MdOutlinePhoneAndroid} from "react-icons/md"
 export default function HomeFeatures() {
 
     const ref = useRef(null);
-  const isInview = useInView(ref, {once : true})
+    const isInview = useInView(ref, {once : true})
     const cardVarients = {
         hidden : {
           y: 50,
@@ -73,7 +73,7 @@ export default function HomeFeatures() {
                                 <motion.div
                                 variants={cardVarients}
                                 animate={isInview ? "visible" : "hidden"}
-                                transition={{ duration: 0.3, delay: index * 0.3 }}
+                                transition={{ duration: 0.5, delay: index * 0.3 }}
                                 >
                                     <HomeFeatureCard
                                     key={item.id}

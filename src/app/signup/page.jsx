@@ -42,7 +42,7 @@ export default function SignUp() {
                                 </div>
                                 <div className="text-center">
                                     <span className="contact-label">Don’t have an account?</span>
-                                    <Link className="contact-label text-lred" href="/signup">Terms & Conditions</Link>
+                                    <Link className="contact-label text-lred" href="/terms&conditions">Terms & Conditions</Link>
                                 </div>
                             </div>
                         </form>
