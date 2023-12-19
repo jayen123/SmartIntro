@@ -45,4 +45,10 @@
     .contact-label {
         @apply text-sm text-dgray md:text-xl
     }
+    .content{
+        @apply hidden
+    }
+    .show-content{
+        @apply block
+    }
 }
