@@ -1,6 +1,7 @@
 import CommonHero from "../components/commonpage"
 import Input from "../components/input"
 import Label from "../components/inputlabel"
+import ContactInfo from "../components/contactInfo"
 
 export default function ContactUs() {
   return (
@@ -46,6 +47,7 @@ export default function ContactUs() {
                 </div>
             </div>
         </section>
+        <ContactInfo />
     </>
   )
 }
