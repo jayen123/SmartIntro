@@ -25,7 +25,7 @@ export default function HomeHero() {
             opacity:1,
             transition : {
                 duration : 1
-            }
+            },
         }
     }
     const btnVar = {
