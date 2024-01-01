@@ -4,30 +4,26 @@ import Link from "next/link"
 export default function HomeHero() {
     const paraVarients = {
         hidden : {
-            x: 100,
-            opacity:0
+            opacity:0.3
         },
         visible : {
-            x: 0,
             opacity:1,
             transition : {
                 duration : 1
             }
         }
-    }
+    };
     const headingVar = {
         hidden : {
-            x: 150,
-            opacity:0
+            opacity:0.2
         },
         visible : {
-            x: 0,
             opacity:1,
             transition : {
                 duration : 1
-            },
+            }
         }
-    }
+    };
     const btnVar = {
         hidden : {
             y: 50,
@@ -40,7 +36,7 @@ export default function HomeHero() {
                 duration : 1
             }
         }
-    }
+    };
   return (
     <>
         <section className=" flex bg-[url('/images/home-hero.png')] bg-no-repeat bg-center bg-cover py-[50px] md:items-end md:py-0 md:h-[700px]">
