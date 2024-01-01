@@ -1,12 +1,15 @@
 "use client"
-import {motion} from "framer-motion"
 import Link from "next/link"
+import {motion} from "framer-motion"
+
 export default function HomeHero() {
     const paraVarients = {
         hidden : {
+            x: 100,
             opacity:0.3
         },
         visible : {
+            x:0,
             opacity:1,
             transition : {
                 duration : 1
@@ -15,9 +18,11 @@ export default function HomeHero() {
     };
     const headingVar = {
         hidden : {
+            x: 100,
             opacity:0.2
         },
         visible : {
+            x:0,
             opacity:1,
             transition : {
                 duration : 1
@@ -62,7 +67,9 @@ export default function HomeHero() {
                             initial ="hidden"
                             animate ="visible"
                             >
-                                <Link className="btn-primary" href="/">ORDER NOW</Link>
+                                <Link href="/">
+                                    <a className="btn-primary">ORDER NOW</a>
+                                </Link>
                             </motion.div>
                         </div>
                     </div>
