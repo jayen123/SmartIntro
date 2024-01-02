@@ -1,14 +1,6 @@
-module.exports = {
-    future: {
-        webpack5: true,
-    },
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config.cache = {
-                type: 'filesystem',
-            };
-        }
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    /* config options here */
+}
 
-        return config;
-    },
-};
+module.exports = nextConfig
