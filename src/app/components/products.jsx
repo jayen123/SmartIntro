@@ -74,7 +74,7 @@ const router = useRouter();
                         </Swiper>
                     </div>
                     <div className='flex justify-center'>
-                      <button onClick={()=>router.push("/card")} className='btn-primary'>View All Products</button>
+                        <button onClick={()=>router.push("/card")} className='btn-primary'>View All Products</button>
                     </div>
                 </div>
             </div>

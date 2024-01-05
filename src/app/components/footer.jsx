@@ -20,10 +20,10 @@ export default function Footer() {
                                 <p className="font-light text-white opacity-70"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             </div>
                             <div className="flex gap-2">
-                                <Link className="footer-icon" href="https://www.facebook.com/shadapixel"> <SlSocialFacebook /> </Link>
-                                <Link className="footer-icon" href="https://twitter.com/jayen_hasan"> <SlSocialTwitter /> </Link>
-                                <Link className="footer-icon" href="https://www.linkedin.com/company/shadapixel/"> <SlSocialLinkedin /> </Link>
-                                <Link className="footer-icon" href="https://instagram.com/"> <SlSocialInstagram /> </Link>
+                                <Link className="footer-icon" href="https://www.facebook.com/shadapixel" target='_blank'> <SlSocialFacebook /> </Link>
+                                <Link className="footer-icon" href="https://twitter.com/jayen_hasan" target='_blank'> <SlSocialTwitter /> </Link>
+                                <Link className="footer-icon" href="https://www.linkedin.com/company/shadapixel/" target='_blank'> <SlSocialLinkedin /> </Link>
+                                <Link className="footer-icon" href="https://instagram.com/" target='_blank'> <SlSocialInstagram /> </Link>
                             </div>
                         </div>
                         <div className="flex flex-col gap-5">
