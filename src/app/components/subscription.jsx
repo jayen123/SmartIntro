@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import {useRouter} from 'next/navigation';
 import SubscriptionSingle from './subscriptionSingle';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
@@ -14,6 +15,7 @@ import { MdAutoAwesome } from "react-icons/md";
 import { MdEco } from "react-icons/md";
 
 export default function Subscription() {
+    const router = useRouter();
     const data = [
         {
             id: 1,
@@ -81,6 +83,10 @@ export default function Subscription() {
                                     <Image src={Right} alt='right-arrow'/>
                                 </button>
                         </Swiper>
+                        
+                    </div>
+                    <div className='flex justify-center'>
+                        <button onClick={()=>router.push("/card")} className='btn-primary'>View All Products</button>
                     </div>
                 </div>
         </section>
